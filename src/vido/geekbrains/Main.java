@@ -36,6 +36,7 @@ public class Main {
         phonebook.get("Иванов");
         phonebook.get("Петров");
         phonebook.get("Сидоров");
+        phonebook.get("Мишочкин");
     }
 
 

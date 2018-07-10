@@ -22,10 +22,14 @@ public class Phonebook {
     public void get(String surname){
         ArrayList<String> res = phonebook.get(surname);
 
-        System.out.println("Телефоны " + surname + ":");
+        if (res == null){
+            System.out.println("Телефоны для " + surname + " отсутсвуют.");
+        }else {
+            System.out.println("Телефоны " + surname + ":");
 
-        for (String phone: res) {
-            System.out.println(phone);
+            for (String phone : res) {
+                System.out.println(phone);
+            }
         }
     }
 }
