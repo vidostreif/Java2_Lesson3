@@ -23,6 +23,19 @@ public class Main {
 
         //Задание 2
 
+        Phonebook phonebook = new Phonebook();
+
+        phonebook.add("Иванов", "89174562545");
+        phonebook.add("Иванов", "89174518445");
+        phonebook.add("Иванов", "89174569482");
+        phonebook.add("Иванов", "89174564825");
+        phonebook.add("Петров", "89278456897");
+        phonebook.add("Сидоров", "89378459655");
+        phonebook.add("Сидоров", "89478945612");
+
+        phonebook.get("Иванов");
+        phonebook.get("Петров");
+        phonebook.get("Сидоров");
     }
 
 
