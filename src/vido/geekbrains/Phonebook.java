@@ -9,15 +9,12 @@ public class Phonebook {
     private Map<String, ArrayList<String>> phonebook = new HashMap<>();
 
     public void add(String surname, String phone){
-
         ArrayList<String> res = phonebook.get(surname);
 
         if (res == null){
             res = new ArrayList();
-            res.add(phone);
-        }else {
-            res.add(phone);
         }
+        res.add(phone);
 
         phonebook.put(surname, res);
     }
